@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: gilroy-bold;
+    src: url(font-gilroy/Gilroy-Bold.ttf); 
+    
+}
+@font-face {
+    font-family: gilroy-regular;
+    src: url(font-gilroy/Gilroy-Regular.ttf);     
+}
+@font-face {
+    font-family: gilroy-medium;
+    src: url(font-gilroy/Gilroy-Medium.ttf); 
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+}
+
+/*Header css starts*/
+
+header{
+    display: flex;
+    background-color: #151515;
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10px;
+}
+header .z-logo{
+   max-width: 8rem;
+   margin-left: 6rem;
+}
+.navlinks{
+    margin-right: 5rem;
+}
+.navlinks ul{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+.navlinks ul li{
+    padding: 0px 14px 0px 14px;
+    list-style: none;
+    padding-top: 0.5rem ;
+    transition-duration: 0.5s;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: gilroy-medium;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+.navlinks ul li a:after{
+    content: "";
+    position: absolute;
+    background-color:black;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+    display: hide;
+}
+.navlinks ul li a:hover::after{
+   width: 100%;
+   display: initial;
+   background-color: #6E70FF;
+}
+header button{
+    width: 98px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: #6E70FF;
+    color: #ffffff;
+    margin-right: 6rem;
+    padding-left: 7px;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: blueviolet;
+}
+header input{
+    display: none;
+}
+header .menu-icon{
+    width: 2rem;
+}
+label{
+    display: none;
+}
+@media (max-width:812px){
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+    header .z-logo{
+        max-width: 8rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+     }
+    .navlinks {
+        background-color:#151515;
+        width: 100%;
+        display: none;
+        transition-duration: 0.5s;
+        transition-property: all;
+        transition-delay: inherit;
+        
+    }
+    .navlinks ul {
+        flex-direction: column;
+        padding: 2rem; 
+    }
+    header button{
+        margin-top: 1rem;
+    }
+    label{
+    display: block;
+    position: absolute;
+    right: 2rem;
+    margin-top: 1rem;
+    }
+    #menu:checked~.navlinks{
+        display: initial;
+       
+    }
+    
+}
+
+/*Header css ends*/
+
+/* top-section */
+
+.top-section{
+    min-height: 40rem;
+    top: 4rem;
+    background-color: #151515;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+.left-top-section{
+    max-width: 50%;
+    padding: 8rem 2rem 8rem 8rem;
+}
+.left-top-section h1{
+    font-family: gilroy-bold;
+    font-size: 32px;
+    line-height: 150%;
+}
+.left-top-section  span{
+    background-image: url(Svgs/Vector\ 202\ \(Stroke\).svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    background-position: bottom;
+    padding: 5px;
+}
+.left-top-section p{
+    font-family: gilroy-regular;
+    font-size: 18px;
+    line-height: 150%;
+    color:  #B9B9B9;
+}
+.left-top-section button{
+    width: 112px;
+    height: 40px;
+    background-color: #6E70FF;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.left-top-section button:hover{
+    background-color: blueviolet;
+}
+.right-top-section{
+    max-width: 50%;
+    max-height: 100%;
+}
+
+@media (max-width:768px){
+    .top-section{
+        display: block;
+    }
+    .left-top-section{
+        max-width: 100%;
+        padding: 1rem 2rem 0rem 4rem;
+    }
+    .left-top-section h1{
+        font-size: 25px;
+    }
+    .left-top-section p{
+        font-size: 15px;
+    }
+}
