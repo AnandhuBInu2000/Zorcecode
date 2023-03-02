@@ -15,13 +15,19 @@
     src: url(font-gilroy/Gilroy-Medium.ttf); 
     
 }
+@font-face {
+    font-family: gilroy-semibold;
+    src: url(font-gilroy/Gilroy-SemiBold.ttf);
+}
 body{
     margin: 0;
     padding: 0;
-    background-color: ghostwhite;
+    background-color: #151515;
+    color: #ffffff;
+    z-index: -1px;
 }
 
-/*Header css starts*/
+/*Header*/
 
 header{
     display: flex;
@@ -31,7 +37,8 @@ header{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    z-index: 10px;
+    top: 0;
+    z-index: 1;
 }
 header .z-logo{
    max-width: 8rem;
@@ -136,7 +143,7 @@ label{
     
 }
 
-/*Header css ends*/
+/*Header end*/
 
 /* top-section */
 
@@ -145,11 +152,14 @@ label{
     top: 4rem;
     background-color: #151515;
     color: #ffffff;
-    position: absolute;
+    position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    z-index: -1;
+    background-image: url(Svgs/lines\ bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .left-top-section{
     max-width: 50%;
@@ -174,20 +184,36 @@ label{
     line-height: 150%;
     color:  #B9B9B9;
 }
-.left-top-section button{
+.left-top-section button {
     width: 112px;
     height: 40px;
     background-color: #6E70FF;
     color: #ffffff;
     border-radius: 3px;
+    border: none;
 }
 .left-top-section button:hover{
     background-color: blueviolet;
 }
 .right-top-section{
     max-width: 50%;
-    max-height: 100%;
 }
+.right-top-section img{
+   max-width: 85%;
+   object-fit: cover;
+   object-position: center;
+   margin-top: 6.5rem;
+   margin-bottom: auto;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   padding: 4%;
+   background-image: url(Svgs/Ellipse\ 3.svg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
 
 @media (max-width:768px){
     .top-section{
@@ -199,8 +225,144 @@ label{
     }
     .left-top-section h1{
         font-size: 25px;
-    }
+  }
     .left-top-section p{
         font-size: 15px;
+    }
+    .right-top-section img{
+        margin-left: 25%;
+        margin-right: 20%;
+        margin-top: 2rem;
+        max-width: 150%;
+    }
+}
+/*top-section end*/
+
+/* services */ 
+.services{
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+}
+.services hr{
+opacity: 0.2;
+}
+.services-header{
+    min-height: 12rem;
+    text-align: center;
+}
+.services-header h2{
+    font-family: gilroy-bold;
+    padding-top: 2rem;
+    font-size: 25px;
+}
+ .services-header h2::before {
+    position: absolute;
+    content: '';
+    width: 19rem;
+    height: 20px;
+    background-image: url(Svgs/service-underline.svg);
+    top: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-size: 13rem;
+    background-repeat: no-repeat;
+    } 
+.services-header p{
+    font-family: gilroy-regular;
+    padding-top: 1rem;
+    color: #B9B9B9;
+    font-size: 20px;
+    line-height: 150%;
+}
+.card-condainer{
+    position: relative;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+.card-condainer .card{
+    minheight: 20rem;
+    max-width: 25rem;
+    background-color: #2E2E2E;
+    align-items: center;
+    border-radius: 3px;
+    padding: 2rem;position: relative;
+    transition: linear;
+    background-image: url("Svgs/svg2.svg");
+    transition: transform .5s ease;
+}
+.card-condainer .card:hover{
+    transform: scale(1.1);
+}
+.card-condainer .card img{
+    width: 2.5rem;
+}
+.card-condainer .card h3{
+    font-family: gilroy-semibold;
+    color: #B9B9B9;
+}  
+.card-condainer .card p{
+    font-family: gilroy-regular;
+    color: #B9B9B9;
+    line-height: 150%;
+    font-size: 14px;
+    margin-top: -0.5rem;
+}
+.card-condainer .card button{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #6E70FF;
+    border: none;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.card-condainer .card button:hover{
+    background-color: blueviolet;
+}
+.card-condainer .card .img-arrow{
+    width: 1rem;
+    padding: 1px;
+}
+
+@media (max-width:768px){
+    .services-header h2{
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .services-header p{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+    }
+    .services-header h2::before{
+        top: 3.5rem;
+        width: 15rem;
+        background-size: 10rem;
+    }
+    .card-condainer{
+        gap: 1rem;
+    }
+    .card-condainer .card{
+        margin: 1rem;
+    }
+    
+}
+@media (max-width:300px){
+    .services-header h2{
+        font-size: 15px;
+    }   
+    .services-header h2::before{
+        top: 3rem;
+        width: 11rem;
+        background-size: 10rem;
     }
 }
