@@ -19,6 +19,9 @@
     font-family: gilroy-semibold;
     src: url(font-gilroy/Gilroy-SemiBold.ttf);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -246,6 +249,7 @@ label{
 }
 .services hr{
 opacity: 0.2;
+bottom: 0;
 }
 .services-header{
     min-height: 12rem;
@@ -277,7 +281,7 @@ opacity: 0.2;
 }
 .card-condainer{
     position: relative;
-    height: 25rem;
+    min-height: 25rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -286,12 +290,13 @@ opacity: 0.2;
     padding-bottom: 2.5rem;
 }
 .card-condainer .card{
-    minheight: 20rem;
+    min-height: 20rem;
     max-width: 25rem;
     background-color: #2E2E2E;
     align-items: center;
     border-radius: 3px;
-    padding: 2rem;position: relative;
+    padding: 2rem;
+    position: relative;
     transition: linear;
     background-image: url("Svgs/svg2.svg");
     transition: transform .5s ease;
@@ -365,4 +370,137 @@ opacity: 0.2;
         width: 11rem;
         background-size: 10rem;
     }
+}
+
+/* services end */
+/* method */
+
+.methods{
+    position: relative;
+    display: inline;
+    width: 100%;
+}
+.top-method{
+    min-height: 12rem;
+    margin-top: 10px;
+}
+.top-method{
+    min-height: 12rem;
+    text-align: center;
+}
+.top-method h2{
+    font-family: gilroy-bold;
+    padding-top: 2rem;
+    font-size: 25px;
+}
+ .top-method h2::before {
+    position: absolute;
+    content: '';
+    width: 19rem;
+    height: 20px;
+    background-image: url(Svgs/method-underline.svg);
+    top: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-size: 13rem;
+    background-repeat: no-repeat;
+    } 
+.top-method p{
+    font-family: gilroy-regular;
+    padding-top: 1rem;
+    color: #B9B9B9;
+    font-size: 20px;
+    line-height: 150%;
+}
+@media (max-width:768px){
+    .top-method h2{
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .top-method p{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+    }
+    .top-method h2::before{
+        top: 3.5rem;
+        width: 15rem;
+        background-size: 10rem;
+    }
+}
+
+@media (max-width:300px){
+    .top-method h2{
+        font-size: 15px;
+    }   
+    .top-method h2::before{
+        top: 3rem;
+        width: 11rem;
+        background-size: 10rem;
+    }
+}
+
+.method-box-condainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem 2rem 4rem 2rem;
+}
+.method-box-condainer .box-one{
+    min-height: 32.5rem;
+    width: 51rem;
+    align-items: center;
+    background-image: url(Svgs/svg2.svg);
+    background-color: #2E2E2E;
+    border-radius: 3px;
+}
+.method-box-condainer .box-two{
+    min-height: 32.5rem;
+    width: 26rem;
+    background-image: url(Svgs/svg2.svg);
+    background-color: #2E2E2E;
+    border-radius: 3px;
+}
+
+/* method end */
+/* crossbar */
+
+.crossbar{
+    position: relative;
+    min-height: 9rem;
+    background-color: #2E2E2E;
+}
+
+/* crossbar end */
+/* second-last */
+
+.second-last{
+    position: relative;
+    min-height: 44rem;
+    justify-content: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.second-last .box{
+   position: relative; 
+   top: 6rem;
+   max-width: 80rem;
+   min-height: 32rem;
+   margin-left:auto;
+   margin-right: auto;
+   background-image: url(Svgs/svg2.svg);
+   background-color: #2E2E2E;
+   border-radius: 4px;
+
+   
+}
+
+/*second-last end */
+/*footer*/
+
+footer{
+    position: relative;
+    min-height: 35rem;
+    background-color: #2E2E2E;
 }
