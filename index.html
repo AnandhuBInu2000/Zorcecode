@@ -8,7 +8,16 @@
     <title>Zorcecode</title>
 </head>
 <body>
+    <div class="preloader-condainer" id="pre">
+        <div class="preloader" id="loader">
+            <span class="tile-1"></span>
+            <span class="tile-2"></span>
+            <span class="tile-3"></span>
+            <span class="tile-4"></span>
 
+        <img src="assets/Svgs/Logo.svg" alt="Zorcecode">
+        </div>
+    </div>
     <header>
         <div class="logo">
             <img class="z-logo" src="assets/Svgs/Logo.svg" alt="Zorcecode">
@@ -118,6 +127,20 @@
     
     <footer>
         
-    </footer>
-</body>
-</html>
+    </footer>  
+    
+    <script>
+        
+
+        var overlay = document.getElementById("pre");
+
+        window.addEventListener('load',function(){
+            setTimeout(function() {
+                overlay.style.display = 'none';
+      }, 2300); 
+        });
+    </script>
+
+    
+</body>     
+</html> 
