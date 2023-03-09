@@ -25,8 +25,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #151515;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #151515;
     z-index: -1px;
 }
 .preloader-condainer{
@@ -135,18 +135,18 @@ body{
 
 header{
     display: flex;
-    background-color: #151515;
     height: 4rem;
     position: fixed;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     top: 0;
+    background-color: #ffffff;
     z-index: 1;
 }
 header .z-logo{
    max-width: 8rem;
-   margin-left: 6rem;
+   margin-left: 8rem;
 }
 .navlinks{
     margin-right: 5rem;
@@ -164,16 +164,16 @@ header .z-logo{
 }
 .navlinks ul li a{
     text-decoration: none;
-    color: #ffffff;
     font-family: gilroy-medium;
     font-size: 13px;
+    font-weight: 550;
     position: relative;
+    color: #151515;
     cursor: pointer;
 }
 .navlinks ul li a:after{
     content: "";
     position: absolute;
-    background-color:black;
     height: 2px;
     width: 0%;
     left: 0;
@@ -191,7 +191,6 @@ header button{
     height: 38px;
     border-radius: 4px;
     background-color: #6E70FF;
-    color: #ffffff;
     margin-right: 6rem;
     padding-left: 7px;
     cursor: pointer;
@@ -219,8 +218,8 @@ label{
         margin-top: 1rem;
      }
     .navlinks {
-        background-color:#151515;
         width: 100%;
+        background-color: #ffffff;
         display: none;
         transition-duration: 0.5s;
         transition-property: all;
@@ -253,26 +252,24 @@ label{
 
 .top-section{
     min-height: 40rem;
-    top: 4rem;
-    background-color: #151515;
-    color: #ffffff;
+    top: 1.5rem;
     position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(Svgs/lines\ bg.svg);
+    background-image: url(Svgs/lines\ bg2.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .left-top-section{
     max-width: 50%;
-    padding: 8rem 2rem 8rem 8rem;
+    padding: 8rem 2rem 0rem 8rem;
 }
 .left-top-section h1{
     font-family: gilroy-bold;
-    font-size: 32px;
-    line-height: 150%;
+    font-size: 38px;
+    line-height: 145%;
 }
 .left-top-section  span{
     background-image: url(Svgs/Vector\ 202\ \(Stroke\).svg);
@@ -284,44 +281,48 @@ label{
 }
 .left-top-section p{
     font-family: gilroy-regular;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
-    color:  #B9B9B9;
+    color:  #818181;
 }
 .left-top-section button {
-    width: 112px;
-    height: 40px;
+    width: 90px;
+    height: 32px;
     background-color: #6E70FF;
     color: #ffffff;
-    border-radius: 3px;
+    border-radius: 2px;
     border: none;
+    margin-top: 0.5rem;
 }
 .left-top-section button:hover{
     background-color: blueviolet;
 }
 .right-top-section{
-    max-width: 50%;
+    max-width: 48%;
 }
 .right-top-section img{
    max-width: 85%;
    object-fit: cover;
    object-position: center;
-   margin-top: 6.5rem;
-   margin-bottom: auto;
+   margin-top: 10%;
    margin-left: auto;
    margin-right: auto;
    display: block;
-   padding: 4%;
    background-image: url(Svgs/Ellipse\ 3.svg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
-
+@media (max-width:1028px){
+  .right-top-section img{
+    margin-top: 10rem;
+  }
+}
 
 @media (max-width:768px){
     .top-section{
         display: block;
+        top: 5rem;
     }
     .left-top-section{
         max-width: 100%;
@@ -341,6 +342,70 @@ label{
     }
 }
 /*top-section end*/
+
+/*who we are*/
+
+.who-we-are{
+    position: relative;
+    min-height: 40rem;
+    margin-top: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem 0rem 2rem 9rem;
+}
+.who-we-are .who-section-img-condainer{
+    width: 30%;
+}
+.who-we-are img{
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    margin-top: 10%;
+}
+.who-we-are .who-section-contants {
+    width: 70%;
+    padding: 5rem 8rem 5rem 3rem;
+}
+.who-we-are .who-section-contants h1{
+    font-family: gilroy-bold;
+    font-size: 33px;
+    margin: 0px;
+}
+.who-we-are .who-section-contants p{
+    font-family: gilroy-regular;
+    color: #818181;
+    line-height: 150%;
+    font-size: 19px;
+}
+@media (max-width:768px){
+   .who-we-are{
+    flex-direction: column-reverse;
+   }
+   .who-we-are{
+    padding: 2rem 0rem 2rem 0rem;
+   }
+   .who-we-are .who-section-contants{
+    padding: 5rem 3rem 5rem 1rem;
+    width: 100%;
+   }
+   .who-we-are .who-section-contants h1{
+    font-size: 25px;
+    padding-left: 3rem;
+   }
+   .who-we-are .who-section-contants p{
+    font-size: 15px;
+    padding: 0rem 2rem 0rem 3rem;
+   }
+   .who-we-are .who-section-img-condainer{
+    width: 70%;
+    }
+   .who-we-are img{
+    object-fit: cover;
+    
+   }
+
+}
 
 /* services */ 
 .services{
@@ -393,14 +458,22 @@ bottom: 0;
 .card-condainer .card{
     min-height: 20rem;
     max-width: 25rem;
-    background-color: #2E2E2E;
+    background-color: #ffffff;
     align-items: center;
     border-radius: 3px;
     padding: 2rem;
     position: relative;
     transition: linear;
-    background-image: url("Svgs/svg2.svg");
+    box-shadow: 0px 0px 67px rgba(110, 112, 255, 0.08);
     transition: transform .5s ease;
+}
+.card-condainer .card:first-child{
+    box-shadow: none;
+    transition: none;
+    
+}
+.card-condainer .card:first-child:hover{
+    transform: none
 }
 .card-condainer .card:hover{
     transform: scale(1.1);
@@ -410,11 +483,15 @@ bottom: 0;
 }
 .card-condainer .card h3{
     font-family: gilroy-semibold;
-    color: #B9B9B9;
-}  
+    color: #151515;
+}
+.card-condainer .card h3:first-child  {
+    font-size: 30px;
+    font-family: gilroy-bold;
+}
 .card-condainer .card p{
     font-family: gilroy-regular;
-    color: #B9B9B9;
+    color: #818181;
     line-height: 150%;
     font-size: 14px;
     margin-top: -0.5rem;
@@ -553,14 +630,12 @@ bottom: 0;
     min-height: 32.5rem;
     width: 51rem;
     align-items: center;
-    background-image: url(Svgs/svg2.svg);
     background-color: #2E2E2E;
     border-radius: 3px;
 }
 .method-box-condainer .box-two{
     min-height: 32.5rem;
     width: 26rem;
-    background-image: url(Svgs/svg2.svg);
     background-color: #2E2E2E;
     border-radius: 3px;
 }
@@ -590,7 +665,6 @@ bottom: 0;
    min-height: 32rem;
    margin-left:auto;
    margin-right: auto;
-   background-image: url(Svgs/svg2.svg);
    background-color: #2E2E2E;
    border-radius: 4px;
 
