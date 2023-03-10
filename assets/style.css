@@ -468,13 +468,54 @@ bottom: 0;
     padding: 6rem 2rem 2rem 2rem;
     position: relative;
     transition: linear;
-    background-image: url(Svgs/Ellipse\ 5\ card.svg);
-    background-repeat: no-repeat;
-    background-position: 2rem 1rem;
-    background-size: 4rem;
     box-shadow: 0px 0px 67px rgba(110, 112, 255, 0.08);
-     transition: all 0.8s ease; 
+     transition: all 0.3s ease; 
     color: #151515;
+}
+.card-condainer .card:nth-child(2){
+    background-image: url(Svgs/card-one\ svg.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem 2rem;
+    background-size: 4rem;
+}
+.card-condainer .card:nth-child(2):hover{
+    background-image: url(Svgs/card-one-hover.svg);
+}
+.card-condainer .card:nth-child(3){
+    background-image: url(Svgs/card-two-svg.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem 2rem;
+    background-size: 4rem;
+}
+.card-condainer .card:nth-child(3):hover{
+    background-image: url(Svgs/card-two-hover.svg);
+}
+.card-condainer .card:nth-child(4){
+    background-image: url(Svgs/card-three-svg.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem 2rem;
+    background-size: 4rem;
+}
+.card-condainer .card:nth-child(4):hover{
+    background-image: url(Svgs/card-three-hover.svg);
+}
+.card-condainer .card:nth-child(5){
+    background-image: url(Svgs/card-four-svg.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem 2rem;
+    background-size: 4rem;
+}
+.card-condainer .card:nth-child(5):hover{
+    background-image: url(Svgs/card-four-hover.svg);
+}
+.card-condainer .card:nth-child(6){
+    background-image: url(Svgs/card-five-svg.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem 2rem;
+    background-size: 4rem;
+}
+.card-condainer .card:nth-child(6):hover{
+    background-image: url(Svgs/card-five-hover.svg);
 }
 .card-condainer .card:first-child{
     box-shadow: none;
