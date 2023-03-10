@@ -326,7 +326,7 @@ label{
     }
     .left-top-section{
         max-width: 100%;
-        padding: 1rem 2rem 0rem 4rem;
+        padding: 1rem 2rem 0rem 3rem;
     }
     .left-top-section h1{
         font-size: 25px;
@@ -386,7 +386,7 @@ label{
     padding: 2rem 0rem 2rem 0rem;
    }
    .who-we-are .who-section-contants{
-    padding: 5rem 3rem 5rem 1rem;
+    padding: 5rem 3rem 5rem 0rem;
     width: 100%;
    }
    .who-we-are .who-section-contants h1{
@@ -406,8 +406,9 @@ label{
    }
 
 }
-
+/* who we are */
 /* services */ 
+
 .services{
     position: relative;
     width: 100%;
@@ -454,47 +455,72 @@ bottom: 0;
     justify-content: center;
     padding-top: 3rem;
     padding-bottom: 2.5rem;
+    background-image: url(Svgs/Explore\ svg.svg);
+    background-repeat: no-repeat;
+    background-size: 35rem;
 }
 .card-condainer .card{
-    min-height: 20rem;
-    max-width: 25rem;
+    min-height: 18rem;
+    max-width: 24rem;
     background-color: #ffffff;
     align-items: center;
     border-radius: 3px;
-    padding: 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     position: relative;
     transition: linear;
+    background-image: url(Svgs/Ellipse\ 5\ card.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem 1rem;
+    background-size: 4rem;
     box-shadow: 0px 0px 67px rgba(110, 112, 255, 0.08);
-    transition: transform .5s ease;
+     transition: all 0.8s ease; 
+    color: #151515;
 }
 .card-condainer .card:first-child{
     box-shadow: none;
     transition: none;
+    padding-top: 4rem;
+    background-color: transparent;
+    background-image: none;
     
 }
 .card-condainer .card:first-child:hover{
-    transform: none
+    transform: none;
+    background-color: transparent;
+    color: #151515;
 }
 .card-condainer .card:hover{
-    transform: scale(1.1);
+   
+    background-color: #6E70FF;
+    color: #ffffff;
 }
 .card-condainer .card img{
     width: 2.5rem;
 }
 .card-condainer .card h3{
     font-family: gilroy-semibold;
-    color: #151515;
+    font-size: 20px;
+    
 }
-.card-condainer .card h3:first-child  {
+.card-condainer .card:first-child h3 {
     font-size: 30px;
     font-family: gilroy-bold;
+}
+.card-condainer .card:first-child p{
+    font-size: 17px;
 }
 .card-condainer .card p{
     font-family: gilroy-regular;
     color: #818181;
     line-height: 150%;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: -0.5rem;
+}
+.card-condainer .card:hover p{
+    color: #ffffff;
+}
+.card-condainer .card:first-child:hover p{
+    color: #818181;
 }
 .card-condainer .card button{
     height: 2.5rem;
@@ -550,132 +576,215 @@ bottom: 0;
     }
 }
 
-/* services end */
-/* method */
+/*services end*/
+/* how we */
 
-.methods{
+.how-we{
     position: relative;
-    display: inline;
-    width: 100%;
-}
-.top-method{
-    min-height: 12rem;
-    margin-top: 10px;
-}
-.top-method{
-    min-height: 12rem;
-    text-align: center;
-}
-.top-method h2{
-    font-family: gilroy-bold;
-    padding-top: 2rem;
-    font-size: 25px;
-}
- .top-method h2::before {
-    position: absolute;
-    content: '';
-    width: 19rem;
-    height: 20px;
-    background-image: url(Svgs/method-underline.svg);
-    top: 4rem;
-    background-position: center;
-    background-size: cover;
-    background-size: 13rem;
-    background-repeat: no-repeat;
-    } 
-.top-method p{
-    font-family: gilroy-regular;
-    padding-top: 1rem;
-    color: #B9B9B9;
-    font-size: 20px;
-    line-height: 150%;
-}
-@media (max-width:768px){
-    .top-method h2{
-        font-size: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .top-method p{
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 15px;
-    }
-    .top-method h2::before{
-        top: 3.5rem;
-        width: 15rem;
-        background-size: 10rem;
-    }
-}
-
-@media (max-width:300px){
-    .top-method h2{
-        font-size: 15px;
-    }   
-    .top-method h2::before{
-        top: 3rem;
-        width: 11rem;
-        background-size: 10rem;
-    }
-}
-
-.method-box-condainer{
+    min-height: 40rem;
+    margin-top: 0rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 1rem 2rem 4rem 2rem;
-}
-.method-box-condainer .box-one{
-    min-height: 32.5rem;
-    width: 51rem;
     align-items: center;
-    background-color: #2E2E2E;
-    border-radius: 3px;
+    padding: 0rem 0rem 2rem 8rem;
+    background-image: url(Svgs/Explore\ svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 40rem;
 }
-.method-box-condainer .box-two{
-    min-height: 32.5rem;
-    width: 26rem;
-    background-color: #2E2E2E;
-    border-radius: 3px;
+.how-we .how-section-img-condainer{
+    width: 30%;
 }
-
-/* method end */
-/* crossbar */
-
-.crossbar{
-    position: relative;
-    min-height: 9rem;
-    background-color: #2E2E2E;
-}
-
-/* crossbar end */
-/* second-last */
-
-.second-last{
-    position: relative;
-    min-height: 44rem;
-    justify-content: center;
-    padding: 0rem 2rem 0rem 2rem;
-}
-.second-last .box{
-   position: relative; 
-   top: 6rem;
-   max-width: 80rem;
-   min-height: 32rem;
-   margin-left:auto;
-   margin-right: auto;
-   background-color: #2E2E2E;
-   border-radius: 4px;
-
+.how-we img{
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    margin-top: 2%;
    
 }
+.how-we .how-section-contants {
+    width: 60%;
+    padding: 1rem 5rem 5rem 0rem;
+}
+.how-we .how-section-contants h1{
+    font-family: gilroy-bold;
+    font-size: 33px;
+    margin: 0px;
+}
+.how-we .how-section-contants p{
+    font-family: gilroy-regular;
+    color: #818181;
+    line-height: 150%;
+    font-size: 19px;
+}
+@media (max-width:768px){
+   .how-we{
+    flex-direction: column-reverse;
+   }
+   .how-we{
+    padding: 2rem 0rem 2rem 0rem;
+   }
+   .how-we .how-section-contants{
+    padding: 5rem 3rem 5rem 1rem;
+    width: 100%;
+   }
+   .how-we .how-section-contants h1{
+    font-size: 25px;
+    padding-left: 3rem;
+   }
+   .how-we .how-section-contants p{
+    font-size: 15px;
+    padding: 0rem 2rem 0rem 3rem;
+   }
+   .how-we .how-section-img-condainer{
+    width: 70%;
+    }
+   .how-we img{
+    object-fit: cover;
+    
+   }
 
-/*second-last end */
+}
+/* how we end */
+/* project */
+
+.project{
+    position: relative;
+    background-color: #6E70FF;
+    color: #ffffff;
+    min-height: 16rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    align-items: center;
+    background-image: url(Svgs/project\ svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: gilroy-regular;
+    line-height: 150%;
+}
+.project h1{
+    font-family: gilroy-semibold;
+    font-size: 1.6rem;
+}
+.project button{
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    border-radius: 3px;
+    color: #6E70FF;
+    font-size: 0.7rem;
+    font-family: gilroy-semibold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: transform 0.2s ease;
+    margin-bottom: 1.5rem;
+}  
+.project button:hover{
+
+ transform: scale(1.1);
+}
+@media(max-width:768px){
+    .project p{
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .project h1{
+        padding: 0rem 2rem 0rem 2rem;
+    }
+}
+/* project end */
 /*footer*/
 
 footer{
-    position: relative;
-    min-height: 35rem;
-    background-color: #2E2E2E;
+    min-height: 13rem;
+    display: flex;
+    flex-wrap: wrap;
 }
+footer .zorcecode-technologies{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8rem;
+}
+footer .zorcecode-technologies h4{
+    margin-left: 2rem;
+    font-family: gilroy-semibold;
+}
+footer .zorcecode-technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 0.5rem;
+}
+footer .zorcecode-technologies img{
+    padding-left: 2rem;
+}
+footer .zorcecode-technologies ul li a{
+    text-decoration: none;
+    font-family: gilroy-regular;
+    color: #818181;
+}
+footer .zorcecode-technologies ul li a:hover{
+    text-decoration: underline;
+}
+footer .zorcecode-technologies img{
+    padding-right: 0.5rem;
+    height: 0.9rem;
+}
+footer .company{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+footer .company h4{
+    margin-left: 3rem;
+    font-family: gilroy-semibold;
+}
+footer .company ul{
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 0.7rem;
+    list-style: none;
+    padding-left: 2rem;
+}
+footer .company ul li{
+    padding-left: 1rem;
+}
+footer .company ul li a{
+    text-decoration: none;
+    font-family: gilroy-regular;
+    color: #818181;
+}
+footer .company ul li a:hover{
+    text-decoration: underline;
+}
+@media(max-width:900px){
+    footer .zorcecode-technologies{
+        margin-left: 0;
+    }
+    footer .company h4{
+        margin-left: 2rem;
+    }
+    footer .company ul{
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+}
+
+@media(max-width:420px){
+    footer .company ul{
+        display: block;
+    }
+    footer .company ul li{
+     padding: 2px;
+    }
+}
+
+.copyright{
+    text-align: center;
+    font-family: gilroy-regular;
+    font-size: 0.9rem;
+    color: #818181;
+}
+
+
+/* end css */
+
