@@ -18773,7 +18773,7 @@ h4.small-text-banner {
 
 /* home block 3 */
 .home-block-3-left::before {
-  content: url(../images/dots-z.png);
+  content: url(../images/dots.svg);
   position: absolute;
   top: -70px;
   right: -70px;
