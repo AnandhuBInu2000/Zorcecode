@@ -184,7 +184,7 @@
       </div>
       <div class="copyright pb-lg-5 pb-4 pt-lg-0 pt-4">
           <div class="container">
-            <p class="copy-footer-29">Zorcecode Technologies © 2024</p>  
+            <p id="zrcRights" class="copy-footer-29">Zorcecode Technologies</p>  
           </div>
         </div>
   </footer>
@@ -378,6 +378,13 @@
         })
         
     </script>
+
+    <script>
+        const date = new Date();
+        let year = date.getFullYear();
+        document.getElementById('zrcRights').innerHTML = `Zorcecode Technologies © ${year} `;
+    </script>
+    
 </body>
 
 </html>
